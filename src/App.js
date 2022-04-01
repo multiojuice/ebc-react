@@ -1,23 +1,48 @@
-import logo from './logo.svg';
+import React, {useRef} from 'react';
 import './App.css';
+import Loader from './components/Loader';
+import HomeVideo from './components/HomeVideo';
+import History from './components/History';
+import Store from './components/Store';
+import Lessons from './components/Lessons';
+import Gallery from './components/Gallery';
+import Contact from './components/Contact';
 
 function App() {
+  const sections = [
+    {
+      name: 'story',
+      ref: useRef()
+    },
+    {
+      name: 'shop',
+      ref: useRef()
+    },
+    {
+      name: 'lessons',
+      ref: useRef()
+    },
+    {
+      name: 'gallery',
+      ref: useRef()
+    },
+    {
+      name: 'contact',
+      ref: useRef()
+    },
+  ]
+
+  const homeRef = useRef()
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Loader /> */}
+      <HomeVideo innerRef={homeRef} sections={sections}/>
+      <History innerRef={sections[0].ref}/>
+      <Store innerRef={sections[1].ref}/>
+      <Lessons innerRef={sections[2].ref}/>
+      <Gallery innerRef={sections[3].ref}/>
+      <Contact innerRef={sections[4].ref}/>
     </div>
   );
 }

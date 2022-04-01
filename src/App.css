@@ -1,10 +1,11 @@
-.App {
+
+div {
   text-align: center;
+  font-family: 'Averia Serif Libre', cursive;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  font-family: 'Averia Serif Libre', cursive;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -13,26 +14,53 @@
   }
 }
 
-.App-header {
+.nav-button {
+  margin: 8px;
+  font-size: .8em;
+  font-weight: bold;
+  background: none;
+}
+
+.nav-bar {
+  margin: 10px;
+}
+
+.section-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  width: 100%;
+  margin: 20px;
+  filter: brightness(100%);
+}
+
+.product-container {
+  width: 100%;
+  margin: 20px;
+}
+
+.product-container img {
+  height: 150px;
+}
+
+
+.full-section {
+  background-color: white;
+  /* filter: brightness(50%); */
+  /* opacity: .8; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   background-color: #282c34;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  font-family: 'Averia Serif Libre', cursive;
+  color: black;
 }
