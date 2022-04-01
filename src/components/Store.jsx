@@ -5,9 +5,12 @@ import blueJacketFront from '../website_assets/bluejacketfront-min.png'
 import blackJacketBack from '../website_assets/blackjacketback-min.png'
 import blackJacketFront from '../website_assets/blackjacketfront-min.png'
 
-
+import loadable from '@loadable/component'
 
 export default ({innerRef}) => {
+
+    const BuyButton = loadable(() => import('./BuyButton.jsx'))
+
     return (
         <header ref={innerRef} className="full-section" style={{ background: `url(${background}) no-repeat center center fixed`, backgroundSize: 'cover'}}>
             <div className="section-content">
@@ -29,6 +32,8 @@ export default ({innerRef}) => {
                         <img src={blackJacketBack} />
                     </span>
                 </div>
+
+                <BuyButton id={"7701256536293"}/>
             </div>
         </header>
     )
