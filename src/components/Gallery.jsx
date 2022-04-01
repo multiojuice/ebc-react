@@ -1,5 +1,5 @@
 import React from 'react';
-import background from '../website_assets/groupshot.JPG'
+import background from '../website_assets/groupshot.jpg'
 
 
 export default ({innerRef}) => {

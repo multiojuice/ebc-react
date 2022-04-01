@@ -1,5 +1,5 @@
 import React from 'react';
-import background from '../website_assets/brickteaching.JPG'
+import background from '../website_assets/brickteaching.jpg'
 
 
 export default ({innerRef}) => {

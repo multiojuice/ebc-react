@@ -1,9 +1,9 @@
 import React from 'react';
-import background from '../website_assets/still.JPG'
-import blueJacketBack from '../website_assets/bluejacketback.png'
-import blueJacketFront from '../website_assets/bluejacketfront.png'
-import blackJacketBack from '../website_assets/blackjacketback.png'
-import blackJacketFront from '../website_assets/blackjacketfront.png'
+import background from '../website_assets/still.jpg'
+import blueJacketBack from '../website_assets/bluejacketback-min.png'
+import blueJacketFront from '../website_assets/bluejacketfront-min.png'
+import blackJacketBack from '../website_assets/blackjacketback-min.png'
+import blackJacketFront from '../website_assets/blackjacketfront-min.png'
 
 
 

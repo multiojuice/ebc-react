@@ -1,5 +1,5 @@
 import React from 'react';
-import background from '../website_assets/gage.JPG'
+import background from '../website_assets/gage.jpg'
 import logo from '../website_assets/swimmersEBCblack.png'
 
 const generateHeader = (sections) => {
