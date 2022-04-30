@@ -35,8 +35,9 @@ button {
   justify-content: flex-start;
   height: 100%;
   width: 100%;
-  margin: 20px;
   filter: brightness(100%);
+  overflow: scroll;
+  padding: 100px 20px;
 }
 
 .product-container {
@@ -58,7 +59,8 @@ button {
   -o-background-size: cover;
   background-size: cover;
   background-color: #282c34;
-  height: 100vh;
+  min-height: 100vh;
+  width: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
