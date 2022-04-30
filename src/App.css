@@ -58,7 +58,8 @@ button {
   -o-background-size: cover;
   background-size: cover;
   background-color: #282c34;
-  height: 100vh;
+  min-height: 100vh;
+  width: auto;
   display: flex;
   flex-direction: column;
   align-items: center;

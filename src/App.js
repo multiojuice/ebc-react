@@ -1,5 +1,6 @@
 import React, {useRef} from 'react';
 import './App.css';
+import './Sticky.scss';
 import Loader from './components/Loader';
 import HomeVideo from './components/HomeVideo';
 import History from './components/History';
@@ -7,6 +8,10 @@ import Store from './components/Store';
 import Lessons from './components/Lessons';
 import Gallery from './components/Gallery';
 import Contact from './components/Contact';
+import Slide from './components/Slide';
+import background from './website_assets/brickandgage.jpg'
+import smoothscroll from 'smoothscroll-polyfill';
+smoothscroll.polyfill();
 
 function App() {
   const sections = [
@@ -35,14 +40,15 @@ function App() {
   const homeRef = useRef()
 
   return (
-    <div className="App">
-      {/* <Loader /> */}
-      <HomeVideo innerRef={homeRef} sections={sections}/>
-      <History innerRef={sections[0].ref}/>
-      <Store innerRef={sections[1].ref}/>
-      <Lessons innerRef={sections[2].ref}/>
-      <Gallery innerRef={sections[3].ref}/>
-      <Contact innerRef={sections[4].ref}/>
+    <div className="vertical-scroll-snap"> 
+      <Slide image={background} title="Home">
+        <div>This is just a bunmhc of ataj hfasdfj asd </div>
+        <div>This is just a bunmhc of adfads fads fadsf ads fads fas </div>
+      </Slide>
+      <Slide image={background} title="Home">
+        <div>This is just a bunmhc of ataj hfasdfj asd </div>
+        <div>This is just a bunmhc of adfads fads fadsf ads fads fas </div>
+      </Slide>
     </div>
   );
 }
