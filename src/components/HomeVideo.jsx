@@ -19,12 +19,10 @@ const generateHeader = (sections) => {
 
 export default ({sections, innerRef}) => {
     return (
-        <div ref={innerRef} className="full-section" style={{ background: `url(${background}) no-repeat center center fixed`, backgroundSize: 'cover'}}>
-            <div className="section-content">
-                <img src={logo} style={{height: "100px"}}/>
-                <div className="nav-bar">
-                    {generateHeader(sections)}
-                </div>
+        <div className="section-content">
+            <img src={logo} style={{height: "100px"}}/>
+            <div className="nav-bar">
+                {generateHeader(sections)}
             </div>
         </div>
     )

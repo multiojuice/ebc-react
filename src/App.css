@@ -35,7 +35,6 @@ button {
   justify-content: flex-start;
   height: 100%;
   width: 100%;
-  margin: 20px;
   filter: brightness(100%);
 }
 
