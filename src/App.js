@@ -54,7 +54,7 @@ function App() {
       name: 'shop',
       ref: useRef(),
       bg: storebackground,
-      insides: null
+      insides: ([<Store />])
     },
     {
       name: 'lessons',
